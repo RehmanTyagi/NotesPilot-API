@@ -57,7 +57,8 @@ exports.register = AsyncHandler(async (req, res, next) => {
 
   res.status(201).json({
     success: true,
-    data: { message: 'User registered successfully, please check your email to confirm!' }
+    message: 'User registered successfully, please check your email to confirm!',
+    data: {}
   })
 
 })
@@ -158,7 +159,8 @@ exports.forgotPassword = AsyncHandler(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
-    data: { message: 'Email sent successfully!' }
+    message: 'forget password token sent successfully!, please check your email',
+    data: {}
   })
 
 })

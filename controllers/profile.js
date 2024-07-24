@@ -13,6 +13,7 @@ exports.getProfile = AsyncHandler(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
+    message: 'profile fetched successfully',
     data: user
   })
 })
@@ -36,6 +37,7 @@ exports.updateProfile = AsyncHandler(async (req, res, next) => {
 
     res.status(200).json({
       success: true,
+      message: 'profile updated successfully',
       data: user
     })
 
@@ -71,6 +73,7 @@ exports.updateProfilePicture = AsyncHandler(async (req, res, next) => {
     await User.findByIdAndUpdate(loggedInUser, { profilePicture: profilePicture.name })
     res.status(200).json({
       success: true,
+      message: 'profile picture uploaded successfully',
       data: profilePicture.name
     })
   })
@@ -104,6 +107,7 @@ exports.deleteProfilePicture = AsyncHandler(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
+    message: 'profile picture deleted successfully',
     data: {}
   })
 })

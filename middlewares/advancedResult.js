@@ -49,6 +49,7 @@ const advancedResult = (model, populate) => async (req, res, next) => {
 
   res.advancedResult = {
     success: true,
+    message: 'fetched successfully',
     count: results.length,
     pagination,
     data: results

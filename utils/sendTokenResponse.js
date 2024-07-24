@@ -12,6 +12,7 @@ const SendTokenResponse = (user, statusCode, res) => {
 
   res.status(statusCode).cookie('token', token, options).json({
     success: true,
+    message: 'login successfully',
     token
   })
 

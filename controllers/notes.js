@@ -23,7 +23,7 @@ exports.getNote = AsyncHandler(async (req, res, next) => {
         return next(new ErrorResponse(`User not authorized to access this note`, 401))
     }
 
-    res.status(200).json({ success: true, data: note })
+    res.status(200).json({ success: true, message: `note ${note.title} found successfully`, data: note })
 });
 
 //@desc      create new Note
@@ -32,7 +32,7 @@ exports.getNote = AsyncHandler(async (req, res, next) => {
 exports.createNote = AsyncHandler(async (req, res, next) => {
     req.body.user = req.body.user._id
     const note = await Note.create(req.body)
-    res.status(201).json({ success: true, data: note })
+    res.status(201).json({ success: true, message: `note ${note.title} created successfully`, data: note })
 })
 
 //@desc      updated note
@@ -55,7 +55,7 @@ exports.updateNote = AsyncHandler(async (req, res, next) => {
         runValidators: true
     })
 
-    res.status(200).json({ success: true, data: updatedNote })
+    res.status(200).json({ success: true, message: 'note updated successfully', data: updatedNote })
 })
 
 //@desc      delete note
@@ -74,5 +74,5 @@ exports.deleteNote = AsyncHandler(async (req, res, next) => {
     }
 
     await Note.findByIdAndDelete(req.params.id)
-    res.status(200).json({ success: true, data: {} })
+    res.status(200).json({ success: true, message: 'note deleted successfully', data: {} })
 })
