@@ -4,7 +4,7 @@ const AsyncHandler = require('../middlewares/asyncAwait');
 const SendTokenResponse = require('../utils/sendTokenResponse');
 const SendEmail = require('../utils/sendEmail');
 const ForgotPasswordTemplate = require('../utils/forgotPasswordTemplate');
-const WelcomeEmailTemplate = require('../utils/WelcomeEmailTemplate');
+const WelcomeEmailTemplate = require('../utils/welcomeEmailTemplate');
 const crypto = require('crypto');
 
 // desc : Register a new user
