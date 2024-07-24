@@ -1,6 +1,8 @@
 Certainly! Here's a detailed README file for the NotesPilot API. You can adjust it based on specific features or additional information you might want to include.
 
-```markdown
+URL to visit API Documentation: https://notespilot-api.netlify.app
+
+````markdown
 # NotesPilot API
 
 Welcome to the NotesPilot API! NotesPilot is a robust API designed for seamless note-taking and management. This API allows developers to integrate note-taking functionalities into their applications with ease.
@@ -38,6 +40,7 @@ To start using the NotesPilot API, follow these steps:
    git clone https://github.com/yourusername/notespilot-api.git
    cd notespilot-api
    ```
+````
 
 2. **Install Dependencies**
 
@@ -206,6 +209,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or support, please contact us at [support@notespilot.com](mailto:support@notespilot.com).
 
 Happy coding!
+
 ```
 
 Feel free to modify and expand this README based on your project's specific needs and any additional documentation you might want to include.
+```
