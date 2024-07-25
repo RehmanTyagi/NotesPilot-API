@@ -1,4 +1,4 @@
-Certainly! Here's a detailed README file for the NotesPilot API. You can adjust it based on specific features or additional information you might want to include.
+Here's a detailed README file for the NotesPilot API. You can adjust it based on specific features or additional information you might want to include.
 
 URL to visit API Documentation: https://notespilot-api.netlify.app
 
