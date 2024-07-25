@@ -11,6 +11,7 @@ const hpp = require('hpp') // prevent http param pollution
 const limiter = require('express-rate-limit') // rate limiter
 const mongoSanitize = require('express-mongo-sanitize') // prevent nosql injection
 const fileUpload = require('express-fileupload') // file upload middleware
+const cors = require('cors') // cors middleware
 
 // routes
 const notes = require('./routes/notes') // notes routes
@@ -30,6 +31,9 @@ const app = express()
 
 // body parser
 app.use(express.json());
+
+// cors
+app.use(cors())
 
 // rate limiter
 const limiterOptions = {
