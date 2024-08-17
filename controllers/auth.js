@@ -163,7 +163,7 @@ exports.forgotPassword = AsyncHandler(async (req, res, next) => {
   const resetToken = user.getForgotPasswordToken();
   await user.save({ validateBeforeSave: false });
 
-  const resetURL = `${req.get('Origin')}/resetpassword?token=${resetToken}`;
+  const resetURL = `${req.get('Origin')}/resetpassword/${resetToken}`;
 
   const html = ForgotPasswordTemplate({
     username: user.name,
@@ -196,8 +196,8 @@ exports.forgotPassword = AsyncHandler(async (req, res, next) => {
 // route : PUT /api/v1/auth/resetpassword/:token
 // access : public
 exports.resetPassword = AsyncHandler(async (req, res, next) => {
-  const newPassword = req.body.newPassword;
-  const confirmPassword = req.body.confirmPassword;
+  const { newPassword } = req.body;
+
   const resetPasswordToken = crypto
     .createHash('sha256')
     .update(req.params.token)
@@ -211,10 +211,6 @@ exports.resetPassword = AsyncHandler(async (req, res, next) => {
   // if no user found with the token
   if (!user || user.isEmailConfirmed === false) {
     return next(new ErrorResponse('The token is invalid', 400));
-  }
-
-  if (newPassword !== confirmPassword) {
-    return next(new ErrorResponse('Passwords do not match', 400));
   }
 
   // set new password

@@ -18,6 +18,7 @@ const notes = require('./routes/notes'); // notes routes
 const auth = require('./routes/auth'); // auth routes
 const profile = require('./routes/profile'); // user profile routes
 const backup = require('./routes/backup'); // backup routes
+const chat = require('./routes/chat'); // chat routes
 
 // configs
 dotenv.config({ path: './config/config.env' });
@@ -67,6 +68,7 @@ app.use('/api/v1/backup/notes', backup);
 app.use('/api/v1/notes', notes);
 app.use('/api/v1/auth', auth);
 app.use('/api/v1/user', profile);
+app.use('/api/v1/chat', chat);
 
 // error handler
 app.use(ErrorHandler);

@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Meeting with Client",
+    "description": "Discuss project scope and timelines",
+    "content": "Meeting scheduled with the client to finalize project requirements and deliverables.",
+    "category": "Work",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Grocery Shopping",
+    "description": "Buy groceries for the week",
+    "content": "Milk, eggs, bread, and vegetables are on the list.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Team Standup",
+    "description": "Daily team sync-up",
+    "content": "Discussing yesterday's progress and today's plan with the development team.",
+    "category": "Work",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Yoga Session",
+    "description": "Morning yoga routine",
+    "content": "30-minute yoga session to start the day fresh.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Project Archive",
+    "description": "Archiving old project files",
+    "content": "Moving completed project files to the archive.",
+    "category": "Archive",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Daily Journal",
+    "description": "Writing daily thoughts and reflections",
+    "content": "A personal journal entry reflecting on the day's events.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Client Feedback Review",
+    "description": "Review feedback from the client",
+    "content": "Analyzing the feedback received from the client to improve project deliverables.",
+    "category": "Work",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Backup Data",
+    "description": "Backing up important files",
+    "content": "Scheduled backup of project files to the cloud.",
+    "category": "Archive",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Book Reading",
+    "description": "Read 'Atomic Habits' by James Clear",
+    "content": "Chapter 5: The Best Way to Start a New Habit.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Code Review",
+    "description": "Review pull requests",
+    "content": "Reviewing the latest code changes submitted by the team.",
+    "category": "Work",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Office Party",
+    "description": "Company-wide celebration",
+    "content": "Celebrating the successful completion of the fiscal year.",
+    "category": "General",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Doctor's Appointment",
+    "description": "Routine health check-up",
+    "content": "Annual health check-up with the family doctor.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Project Kickoff",
+    "description": "Start new development project",
+    "content": "Initial meeting with stakeholders to define project goals.",
+    "category": "Work",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Blog Writing",
+    "description": "Draft blog post on productivity",
+    "content": "Writing a new article on time management techniques.",
+    "category": "General",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Data Analysis",
+    "description": "Analyze user behavior data",
+    "content": "Analyzing the latest user behavior metrics to identify trends.",
+    "category": "Work",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Vacation Planning",
+    "description": "Plan summer vacation",
+    "content": "Researching destinations and booking flights for the upcoming vacation.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Expense Report",
+    "description": "Prepare monthly expense report",
+    "content": "Compiling all receipts and invoices for the month to create an expense report.",
+    "category": "Work",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Update Resume",
+    "description": "Revise and update professional resume",
+    "content": "Adding recent project experience and skills to the resume.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "File Organization",
+    "description": "Organize digital files",
+    "content": "Sorting and organizing files into appropriate folders.",
+    "category": "Archive",
+    "user": "66b4f04e193f7336e8a36b46"
+  },
+  {
+    "title": "Family Dinner",
+    "description": "Dinner with family at home",
+    "content": "Preparing a special meal and spending quality time with family.",
+    "category": "Personal",
+    "user": "66b4f04e193f7336e8a36b46"
+  }
+]
