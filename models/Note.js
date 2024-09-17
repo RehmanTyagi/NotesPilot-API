@@ -10,13 +10,11 @@ const NoteSchema = new mongoose.Schema(
     },
     title: {
       type: String,
-      required: [true, 'Please provide a title for this note.'],
       trim: true,
       maxlength: [100, 'title cannot be more than 100 characters'],
     },
     description: {
       type: String,
-      required: [true, 'Please provide a description for this note.'],
       maxlength: [500, 'description cannot be more than 500 characters'],
     },
     content: {

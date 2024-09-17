@@ -79,7 +79,7 @@ const advancedResult = (model, populate) => async (req, res, next) => {
     message: 'fetched successfully',
     count: results.length,
     pagination,
-    data: results,
+    results,
   };
   next();
 };

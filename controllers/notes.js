@@ -30,7 +30,7 @@ exports.getNote = AsyncHandler(async (req, res, next) => {
   res.status(200).json({
     success: true,
     message: `note ${note.title} found successfully`,
-    data: note,
+    note,
   });
 });
 
@@ -43,7 +43,7 @@ exports.createNote = AsyncHandler(async (req, res, next) => {
   res.status(201).json({
     success: true,
     message: `note ${note.title} created successfully`,
-    data: note,
+    note,
   });
 });
 
@@ -73,11 +73,10 @@ exports.updateNote = AsyncHandler(async (req, res, next) => {
     new: true,
     runValidators: true,
   });
-
-  res.status(200).json({
+  res.status(200).send({
     success: true,
     message: 'note updated successfully',
-    data: updatedNote,
+    updatedNote,
   });
 });
 
@@ -104,7 +103,5 @@ exports.deleteNote = AsyncHandler(async (req, res, next) => {
   }
 
   await Note.findByIdAndDelete(req.params.id);
-  res
-    .status(200)
-    .json({ success: true, message: 'note deleted successfully', data: {} });
+  res.status(200).json({ success: true, message: 'note deleted successfully' });
 });
