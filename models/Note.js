@@ -23,7 +23,7 @@ const NoteSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      enum: ['General', 'Work', 'Personal', 'Archive'],
+      enum: ['General', 'Work', 'Personal', 'Archive', 'Study'],
       required: [true, 'Please provide a category for this note.'],
     },
   },

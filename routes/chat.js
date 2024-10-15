@@ -10,7 +10,8 @@ router.post('/', async (req, res) => {
     // Using the generate method (ensure you are using the correct Cohere method)
     const response = await cohere.generate({
       prompt: message, // passing user message to Cohere API
-      temperature: 0.75, // controls randomness
+      temperature: 0.2, // controls randomness
+      max_tokens: 50, // A bit higher to allow flexibility
     });
 
     // Send response back as JSON
